@@ -1,3 +1,68 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="First Number"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1" />
+    <EditText
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        local:MvxBind="Text FirstNum"
+        android:id="@+id/editText1" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reverse"
+        local:MvxBind="Click NegateCommand" />
+    <MvxSpinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        local:MvxBind="ItemsSource ArithmeticOperations ;SelectedItem ArithmeticOperation" />
+    <TextView
+        android:text="Second Number"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+    <EditText
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        local:MvxBind="Text SecondNum"
+        android:id="@+id/editText2" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reverse"
+        local:MvxBind="Click NegateCommandB" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:id="@+id/view1"
+        android:background="@color/accent_material_dark"
+        android:layout_marginBottom="5.0dp" />
+    <TextView
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        local:MvxBind="Text Answer"
+        android:id="@+id/textView3" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Square"
+        local:MvxBind="Click Square" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Square Root"
+        local:MvxBind="Click SquareRoot" />
 </LinearLayout>

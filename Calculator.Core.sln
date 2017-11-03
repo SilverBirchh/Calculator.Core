@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.Core", "Calculator.Core\Calculator.Core.csproj", "{C50A6759-8682-4590-9261-BA56D97B1026}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.Android", "Calculator.Android\Calculator.Android.csproj", "{EE5F4E61-7486-40EC-B505-FDDE84E70D65}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +15,9 @@ Global
 		{C50A6759-8682-4590-9261-BA56D97B1026}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C50A6759-8682-4590-9261-BA56D97B1026}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C50A6759-8682-4590-9261-BA56D97B1026}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE5F4E61-7486-40EC-B505-FDDE84E70D65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE5F4E61-7486-40EC-B505-FDDE84E70D65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE5F4E61-7486-40EC-B505-FDDE84E70D65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE5F4E61-7486-40EC-B505-FDDE84E70D65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

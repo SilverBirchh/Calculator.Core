@@ -10,17 +10,26 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Calculator.Core.ViewModel;
+using MvvmCross.Droid.Views;
 
 namespace Calculator.Android
 {
-    [Activity(Label = "CalculatorView")]
-    public class CalculatorView : Activity
+    [Activity(Label = "Numbers", MainLauncher = true)]
+    public class CalculatorView : MvxActivity
     {
-        protected override void OnCreate(Bundle savedInstanceState)
+        public new CalculatorViewModel ViewModel
         {
-            base.OnCreate(savedInstanceState);
+            get { return (CalculatorViewModel)base.ViewModel; }
+            set
+            {
+                base.ViewModel = value;
+            }
+        }
 
-            // Create your application here
+        protected override void OnViewModelSet()
+        {
+            SetContentView(Resource.Layout.Calculator_View);
         }
     }
 }
